@@ -135,7 +135,7 @@
         </div>
         <div class="content">
           <div class="errormsg"></div>
-          <form action="/register" method="POST">
+          <form action="/register" method="post">
             <div class="input-field">
               <i class="fa fa-user"></i>
               <input name="username" type="text" placeholder="输入用户名">
@@ -186,7 +186,7 @@
       }
     })
 
-    $('.mode-login form').addEventListener('submit', function(e){
+    $('.model-login form').addEventListener('submit', function(e){
       e.preventDefault()
       if(!/^\w{3,8}$/.test($('.model-login input[name=username]').value)){
         $('.model-login errormsg').innerText = '用户名需输入3-8个字符，包括字母数字下划线'
@@ -199,7 +199,7 @@
       this.submit()
     })
 
-    $('.mode-register form').addEventListener('submit', function(e){
+    $('.model-register form').addEventListener('submit', function(e){
       e.preventDefault()
       if(!/^\w{3,8}$/.test($('.model-register input[name=username]').value)){
         $('.model-register errormsg').innerText = '用户名需输入3-8个字符，包括字母数字下划线'
